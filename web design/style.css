@@ -1,0 +1,239 @@
+:root{
+    --background-color: #FFF2E5;
+    --background-waves-color: #FFE7CE;
+    --circle-color: #FFDCB7;
+    --gray-color-1: #D9D9D9;
+    --gray-color-2: #B3B3B3;
+    --gray-color-3: #A0A0A0;
+    --orange-primary: #FF8200;
+    --orange-dark: #FF4A00;
+    --shadows-color: #FFC283;
+    --white: #FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 30px;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    height: 30rem;
+    aspect-ratio: 1;
+    background-color: var(--circle-color);
+    border-radius: 50%;
+    position: relative;
+}
+
+.dollar{
+    background: linear-gradient(90deg, var(--gray-color-1) 0% 50%, var(--gray-color-2)50% 100%);
+    height: 7rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+}
+
+.dollar .logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.dollar .logo img{
+    width: 60px;
+}
+
+/* .pages{
+    position: absolute;
+    background-color: #ffd123;
+    width: 10rem;
+    aspect-ratio: 1;
+    bottom: 3rem;
+} */
+
+.page1,
+.page2{
+    position: absolute;
+    width: 9rem;
+    height: 11rem;
+    background: linear-gradient(90deg, var(--gray-color-1) 0% 50%, var(--gray-color-2) 50% 100%);
+    bottom: 4rem;
+    left: 3rem;
+    border-radius: 5px;
+    z-index: 3;
+}
+
+.page2{
+    background: linear-gradient(90deg, var(--gray-color-2) 0% 50%, var(--gray-color-3) 50% 100%);
+    bottom: 5rem;
+    left: 0rem;
+    z-index: 2;
+}
+
+.lines{
+    height: 6rem;
+    aspect-ratio: 1;
+    width: 100%;
+    position: relative;
+    top: 1.5rem;
+}
+
+.line1 .big-line{
+    position: absolute;
+    left: 1rem;
+    width: 48%;
+    height: .9rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.line1 .small-line{
+    position: absolute;
+    left: 63%;
+    width: 30%;
+    height: .9rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.line2{
+    position: absolute;
+    width: 81%;
+    top: 1.75rem;
+    left: 1rem;
+    height: .9rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+
+.line3 .big-line{
+    position: absolute;
+    left: 45%;
+    top: 3.5rem;
+    width: 48%;
+    height: .9rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.line3 .small-line{
+    position: absolute;
+    left: 1rem;
+    top: 3.5rem;
+    width: 30%;
+    height: .9rem;
+    background-color: var(--white);
+    border-radius: 10px;
+}
+
+.orange-line{
+    position: absolute;
+    right: 1rem;
+    bottom: 1.5rem;
+    width: 28%;
+    height: .9rem;
+    background-color: var(--orange-primary);
+    border-radius: 10px;
+}
+
+.computer{
+    height: 17rem;
+    width: 19rem;
+    position: absolute;
+    right: 0;
+    top: 4rem;
+}
+
+.screen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 14rem;
+    width: 100%;
+    background-color: var(--orange-primary);
+    border-radius: 10px;
+}
+
+.nav{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 3.5rem;
+    background-color: var(--orange-dark);
+    border-radius: 0 0 10px 10px;
+}
+
+.nav .dot{
+    position: absolute;
+    width: 1.3rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: var(--white);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.screen .logo{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.screen .logo img{
+    width: 100%;
+}
+
+.stand{
+    height: 5rem;
+    width: 10rem;
+    position: absolute;
+    top: 14rem;
+    left: 50%;
+}
+
+.stand .vertical{
+    background-color: var(--orange-primary);
+    width: 4rem;
+    height: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stand .horizontal{
+    background-color: var(--orange-dark);
+    width: 10rem;
+    height: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
