@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 40rem;
+    height: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient( to top right,rgba(37,145,251,0.98) 0.1%, rgba(0,7,128,1) 99.8% );
+    color: #fff;
+}
+
+.number{
+    width: 22rem;
+    aspect-ratio: 1.5;
+    position: relative;
+    display: flex;
+}
+
+.one{
+    width: 3rem;
+    height: 12rem;
+    background-color: #fff;
+    border-radius: 3px;
+    z-index: 4;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+
+.one::after{
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 4rem;
+    background-color: #fff;
+    transform: rotate(50deg);
+    left: -2rem;
+    top: .45rem;
+    border-radius: 3px;
+}
+
+.zero-one,
+.zero-two{
+    position: absolute;
+    height: 12rem;
+    aspect-ratio: 1;
+    border: 3rem solid #fff;
+    border-radius: 50%;
+    left: 2rem;
+    z-index: 3;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .2);
+}
+
+.zero-two{
+    left: 12rem;
+    z-index: 2;
+}
+
+h1{
+    font-size: 8rem;
+    line-height: 1;
+    margin-top: -1rem;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    line-height: 1;
+}
